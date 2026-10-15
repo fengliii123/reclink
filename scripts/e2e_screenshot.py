@@ -226,11 +226,10 @@ def main():
 
             # ── 5. 标注本地图片（剪贴板无图 → 文件选择 → 标注编辑器）──
             popup = open_shot_popup()
-            # 系统剪贴板可能残留他处复制的图片，先清成纯文本确保走文件选择分支
-            popup.evaluate("navigator.clipboard.writeText('')")
-            with popup.expect_file_chooser() as fc_info:
-                popup.click('.shot-row:has-text("标注本地或剪贴板图片")')
-            fc_info.value.set_files(str(import_png))
+            # 点击该行会先弹 chrome.permissions.request(clipboardRead) 的浏览器原生
+            # 权限框，自动化无法点击、Promise 永挂，文件选择分支到不了（需人工验证）。
+            # 此处直接向隐藏 input[type=file] 塞文件，验证 onChange → 入库 → 标注链路。
+            popup.set_input_files('input[type=file]', str(import_png))
             ann_urls = []
             deadline = time.time() + 10
             while time.time() < deadline:

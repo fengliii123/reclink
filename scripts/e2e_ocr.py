@@ -8,7 +8,10 @@ Usage: python3 scripts/e2e_ocr.py
 """
 import hashlib
 import shutil
+import threading
 import time
+from functools import partial
+from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
@@ -17,6 +20,29 @@ ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / 'dist'
 HOST = '#reclink-region-picker'
 PROFILE = '/tmp/reclink-e2e-profile-ocr'
+
+PAGE_HTML = b'''<!doctype html><html><head><style>
+body { margin: 0; background: #fff; }
+h1 { font: bold 64px/1.4 sans-serif; margin: 40px 0 0 48px; }
+</style></head><body><h1>Example Domain</h1></body></html>'''
+
+
+class _Handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-Type', 'text/html; charset=utf-8')
+        self.send_header('Content-Length', str(len(PAGE_HTML)))
+        self.end_headers()
+        self.wfile.write(PAGE_HTML)
+
+    def log_message(self, *a):
+        pass
+
+
+def start_local_page() -> str:
+    srv = HTTPServer(('127.0.0.1', 0), _Handler)
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    return f'http://127.0.0.1:{srv.server_port}/'
 
 
 def compute_extension_id(dist_path: Path) -> str:
@@ -35,6 +61,7 @@ def wait_text(page, selector, want, timeout=5):
 
 def main():
     shutil.rmtree(PROFILE, ignore_errors=True)
+    page_url = start_local_page()
     with sync_playwright() as p:
         context = p.chromium.launch_persistent_context(
             user_data_dir=PROFILE,
@@ -51,7 +78,7 @@ def main():
         try:
             ext_id = compute_extension_id(DIST)
             target = context.new_page()
-            target.goto('https://example.com')
+            target.goto(page_url)
 
             probe = context.new_page()
             probe.goto(f'chrome-extension://{ext_id}/src/popup/index.html')
@@ -60,7 +87,7 @@ def main():
             def activate_target():
                 probe.evaluate(
                     """async () => {
-                      const tabs = await chrome.tabs.query({url: 'https://example.com/*', currentWindow: true})
+                      const tabs = await chrome.tabs.query({url: 'http://127.0.0.1/*', currentWindow: true})
                       if (tabs.length) await chrome.tabs.update(tabs[0].id, {active: true})
                     }"""
                 )
@@ -113,6 +140,27 @@ def main():
                     break
                 time.sleep(0.5)
             print(f'ocr text: {text[:120]!r}')
+            if not ('xample' in text or 'omain' in text):
+                dbg = ocr.evaluate(
+                    """() => {
+                      const img = document.querySelector('.thumb img')
+                      if (!img || !img.naturalWidth) return { img: false }
+                      const c = document.createElement('canvas')
+                      c.width = img.naturalWidth; c.height = img.naturalHeight
+                      c.getContext('2d').drawImage(img, 0, 0)
+                      const d = c.getContext('2d').getImageData(0, 0, c.width, c.height).data
+                      let nonWhite = 0
+                      for (let i = 0; i < d.length; i += 4) {
+                        if (d[i] < 240 || d[i+1] < 240 || d[i+2] < 240) nonWhite++
+                      }
+                      return { img: true, w: img.naturalWidth, h: img.naturalHeight,
+                               nonWhitePct: Math.round(100 * nonWhite / (d.length / 4)) }
+                    }"""
+                )
+                print(f'ocr page debug: {dbg!r}')
+                if dbg.get('png'):
+                    import base64
+                    Path('/tmp/reclink-ocr-debug.png').write_bytes(base64.b64decode(dbg['png'].split(',', 1)[1]))
             assert 'xample' in text or 'omain' in text, 'expected page title text in OCR result'
             print('OK: OCR verified (local tesseract, region → text)')
         finally:

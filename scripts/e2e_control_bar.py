@@ -158,7 +158,13 @@ def main():
             target.locator(f'{HOST_SEL} .pause-btn').click()
             wait_status(probe, 'paused')
             relay_state(probe)
-            label = target.locator(f'{HOST_SEL} .pause-btn').get_attribute('title')
+            # STATE_CHANGED 广播 + React 渲染是异步的，probe 先行看到 paused，此处轮询等文案跟上
+            label = ''
+            for _ in range(50):
+                label = target.locator(f'{HOST_SEL} .pause-btn').get_attribute('title')
+                if label == '继续':
+                    break
+                time.sleep(0.2)
             assert label == '继续', f'pause label: {label}'
             print('paused via bar')
 
