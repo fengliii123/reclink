@@ -4,3 +4,4 @@ dist/
 .ai-tracks/
 .idea/
 .DS_Store
+*.zip
