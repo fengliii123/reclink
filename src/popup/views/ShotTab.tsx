@@ -1,5 +1,6 @@
 import type { RefObject } from 'react'
 import {
+  ChevronDownIcon,
   ClockIcon,
   ImportImageIcon,
   PageIcon,
@@ -74,7 +75,7 @@ export default function ShotTab({ onShot, onImportImage, fileInputRef, onImportF
       <div className="storage-row">
         <span>{t('storageTo')}</span>
         <span className="storage-chip">
-          💻 {t('storageLocal')} <span className="caret">▾</span>
+          💻 {t('storageLocal')} <ChevronDownIcon size={12} className="caret" />
         </span>
       </div>
       <input ref={fileInputRef} type="file" accept="image/*" hidden onChange={onImportFile} />

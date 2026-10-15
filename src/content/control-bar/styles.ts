@@ -48,7 +48,7 @@ export const controlBarStyles = `
   border-radius: 10px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35), 0 1px 4px rgba(0, 0, 0, 0.2);
   font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-size: 12.5px;
+  font-size: 12px;
   color: #fff;
   user-select: none;
   animation: bar-in 0.28s cubic-bezier(0.2, 0.8, 0.3, 1);
@@ -92,7 +92,7 @@ export const controlBarStyles = `
 }
 
 .label {
-  font-size: 12.5px;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.85);
   white-space: nowrap;
   padding: 0 6px;

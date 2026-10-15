@@ -180,3 +180,11 @@ export function ScanTextIcon({ size = 20, className }: IconProps) {
     </svg>
   )
 }
+
+export function ChevronDownIcon({ size = 20, className }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 20 20" fill="none" className={className}>
+      <path d="M5 8l5 5 5-5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}

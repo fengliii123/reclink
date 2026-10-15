@@ -1,7 +1,7 @@
 import type { RecordingFormat, Resolution } from '../../shared/messages'
 import type { Settings } from '../hooks'
 import { t } from '../../shared/i18n'
-import { PersonCamIcon, RegionIcon, ScreenIcon, TabIcon } from '../icons'
+import { ChevronDownIcon, PersonCamIcon, RegionIcon, ScreenIcon, TabIcon } from '../icons'
 
 export type MenuMode = 'screen' | 'camera' | 'tab' | 'region'
 
@@ -54,22 +54,24 @@ export default function RecordTab({
         <button
           className={`toggle-card ${micEnabled ? '' : 'muted'}`}
           title={micEnabled ? t('micOn') : t('micOff')}
+          aria-label={t(micEnabled ? 'micOn' : 'micOff')}
           onClick={() => updateSettings({ micEnabled: !micEnabled })}
         >
           <span className="icon-wrap">
             <MicGlyph />
           </span>
-          <span className="caret">▾</span>
+          <ChevronDownIcon size={12} className="caret" />
         </button>
         <button
           className={`toggle-card ${cameraEnabled ? '' : 'muted'}`}
           title={cameraEnabled ? t('camOn') : t('camOff')}
+          aria-label={t(cameraEnabled ? 'camOn' : 'camOff')}
           onClick={onToggleCamera}
         >
           <span className="icon-wrap">
             <PersonCamIcon size={16} />
           </span>
-          <span className="caret">▾</span>
+          <ChevronDownIcon size={12} className="caret" />
         </button>
         <div className="switch-card">
           <span className="switch-card-label">{t('controlBar')}</span>
@@ -86,7 +88,7 @@ export default function RecordTab({
         <label className="setting-chip" title={t('resolution')}>
           <span className="badge solid">HD</span>
           {resolution}
-          <span className="caret">▾</span>
+          <ChevronDownIcon size={12} className="caret" />
           <select value={resolution} onChange={(e) => updateSettings({ resolution: e.target.value as Resolution })}>
             <option value="720p">720p</option>
             <option value="1080p">1080p</option>
@@ -95,7 +97,7 @@ export default function RecordTab({
         </label>
         <label className="setting-chip" title={t('exportFormat')}>
           <span className="badge outline">{format.toUpperCase()}</span>
-          <span className="caret">▾</span>
+          <ChevronDownIcon size={12} className="caret" />
           <select value={format} onChange={(e) => updateSettings({ format: e.target.value as RecordingFormat })}>
             <option value="mp4">MP4</option>
             <option value="webm">WebM</option>

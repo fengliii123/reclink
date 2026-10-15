@@ -128,10 +128,20 @@ export default function App() {
             <span className="logo-mark" />
             <span className="logo-name">reclink</span>
           </span>
-          <span className="done-badge">✓ {isShot ? t('doneShot') : t('doneRecord')}</span>
+          {error ? (
+            <span className="done-badge error">! {t('doneError')}</span>
+          ) : (
+            <span className="done-badge">✓ {isShot ? t('doneShot') : t('doneRecord')}</span>
+          )}
         </header>
 
-        {error && <p className="error">{error}</p>}
+        {error && (
+          <div className="error-state">
+            <p className="error">{error}</p>
+            <p className="error-hint">{t('errHintNotFound')}</p>
+            <button className="btn secondary" onClick={() => window.close()}>{t('close')}</button>
+          </div>
+        )}
 
         {deleted ? (
           <div className="deleted-state">
