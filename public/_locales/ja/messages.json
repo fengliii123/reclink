@@ -1,0 +1,514 @@
+{
+  "extName": {
+    "message": "Reclink — 画面録画・スクリーンショット"
+  },
+  "extDesc": {
+    "message": "Chrome画面録画拡張：タブ・デスクトップ・カメラを音声付きで録画。ページ全体のスクリーンショット、注釈、OCR文字認識。すべてローカル処理で安全。"
+  },
+  "cmdOpen": {
+    "message": "reclink を開く"
+  },
+  "cmdCapture": {
+    "message": "現在のタブの表示領域をキャプチャ"
+  },
+  "tabShot": {
+    "message": "キャプチャ"
+  },
+  "tabRecord": {
+    "message": "録画"
+  },
+  "modeScreen": {
+    "message": "デスクトップ"
+  },
+  "modeCamera": {
+    "message": "カメラ"
+  },
+  "modeTab": {
+    "message": "このタブ"
+  },
+  "modeRegion": {
+    "message": "範囲選択"
+  },
+  "micOn": {
+    "message": "マイクオン"
+  },
+  "micOff": {
+    "message": "マイクミュート中"
+  },
+  "camOn": {
+    "message": "カメラストリーム オン"
+  },
+  "camOff": {
+    "message": "カメラストリーム オフ"
+  },
+  "controlBar": {
+    "message": "コントロールバー"
+  },
+  "resolution": {
+    "message": "動画の解像度"
+  },
+  "exportFormat": {
+    "message": "エクスポート形式"
+  },
+  "more": {
+    "message": "その他"
+  },
+  "starting": {
+    "message": "開始しています…"
+  },
+  "startRecording": {
+    "message": "録画を開始"
+  },
+  "shotVisible": {
+    "message": "表示範囲"
+  },
+  "shotFullpage": {
+    "message": "ページ全体"
+  },
+  "shotRegion": {
+    "message": "範囲を選択"
+  },
+  "shotDelayed": {
+    "message": "遅延キャプチャ"
+  },
+  "shotScreen": {
+    "message": "画面 / ウィンドウ"
+  },
+  "shotAnnotate": {
+    "message": "画像に注釈"
+  },
+  "shotOcr": {
+    "message": "テキスト抽出 (OCR)"
+  },
+  "storageTo": {
+    "message": "スクリーンショットの保存先"
+  },
+  "storageLocal": {
+    "message": "ローカル"
+  },
+  "back": {
+    "message": "戻る"
+  },
+  "countdownTitle": {
+    "message": "カウントダウン"
+  },
+  "countdownSub": {
+    "message": "開始をクリックしてから3秒カウントダウン"
+  },
+  "resLabel": {
+    "message": "解像度"
+  },
+  "fmtLabel": {
+    "message": "形式"
+  },
+  "fmtSub": {
+    "message": "MP4 には Chrome 126 以降が必要です。未対応の場合は WebM にフォールバック"
+  },
+  "libraryLink": {
+    "message": "ライブラリ"
+  },
+  "settingsTitle": {
+    "message": "その他の設定"
+  },
+  "errShotFailed": {
+    "message": "キャプチャに失敗しました"
+  },
+  "errNoTab": {
+    "message": "アクティブなタブが見つかりません"
+  },
+  "errStartFailed": {
+    "message": "開始に失敗しました"
+  },
+  "errSaveFailed": {
+    "message": "保存に失敗しました"
+  },
+  "unknownError": {
+    "message": "不明なエラー"
+  },
+  "msgSavedTo": {
+    "message": "保存先"
+  },
+  "downloadDir": {
+    "message": "ダウンロード"
+  },
+  "msgRecordDone": {
+    "message": "録画が完了しました — プレビューを開きました"
+  },
+  "needPermission": {
+    "message": "このサイトでは録画の権限が必要です"
+  },
+  "authorizeStart": {
+    "message": "許可して開始"
+  },
+  "cbPause": {
+    "message": "一時停止"
+  },
+  "cbResume": {
+    "message": "再開"
+  },
+  "cbStop": {
+    "message": "停止"
+  },
+  "cbSaving": {
+    "message": "保存中…"
+  },
+  "cbCamOn": {
+    "message": "カメラストリームを追加"
+  },
+  "cbCamOff": {
+    "message": "カメラストリームを削除"
+  },
+  "countdownLabel": {
+    "message": "録画を開始します"
+  },
+  "countdownCancel": {
+    "message": "キャンセル"
+  },
+  "pickerTip": {
+    "message": "ドラッグして$VERB$する範囲を選択、Esc でキャンセル",
+    "placeholders": {
+      "VERB": {
+        "content": "$1"
+      }
+    }
+  },
+  "pickerVerb_record": {
+    "message": "録画"
+  },
+  "pickerVerb_shot": {
+    "message": "キャプチャ"
+  },
+  "pickerVerb_ocr": {
+    "message": "認識"
+  },
+  "pickerConfirm_record": {
+    "message": "開始"
+  },
+  "pickerConfirm_shot": {
+    "message": "キャプチャ"
+  },
+  "pickerConfirm_ocr": {
+    "message": "認識"
+  },
+  "pickerReset": {
+    "message": "やり直す"
+  },
+  "pickerCancel": {
+    "message": "キャンセル"
+  },
+  "rwPreparing": {
+    "message": "準備中…"
+  },
+  "rwCamRequesting": {
+    "message": "カメラの権限をリクエスト中 — ダイアログで許可してください…"
+  },
+  "rwNoCamera": {
+    "message": "カメラが検出されません"
+  },
+  "rwNoCameraHint": {
+    "message": "カメラが接続されていて利用可能か確認してください。"
+  },
+  "rwCamDenied": {
+    "message": "カメラを利用できません"
+  },
+  "rwCamDeniedHint": {
+    "message": "Chrome にカメラの権限が付与されていません。"
+  },
+  "rwCamGuide1": {
+    "message": "· アドレスバー左のアイコンをクリックし、カメラを「許可」に設定してください"
+  },
+  "rwCamGuide2": {
+    "message": "· macOS：システム設定 → プライバシーとセキュリティ → カメラで Chrome をオンにし、ブラウザを再起動してください"
+  },
+  "doneRecord": {
+    "message": "録画が完了しました"
+  },
+  "doneShot": {
+    "message": "キャプチャが完了しました"
+  },
+  "labelTab": {
+    "message": "タブ"
+  },
+  "labelScreen": {
+    "message": "画面"
+  },
+  "labelCamera": {
+    "message": "カメラ"
+  },
+  "labelScreenshot": {
+    "message": "スクリーンショット"
+  },
+  "durSec": {
+    "message": "$1 秒",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "durMinSec": {
+    "message": "$1 分 $2 秒",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      },
+      "2": {
+        "content": "$2"
+      }
+    }
+  },
+  "download": {
+    "message": "ダウンロード"
+  },
+  "downloadAgain": {
+    "message": "もう一度ダウンロード"
+  },
+  "copy": {
+    "message": "コピー"
+  },
+  "copied": {
+    "message": "コピーしました ✓"
+  },
+  "annotate": {
+    "message": "注釈"
+  },
+  "remove": {
+    "message": "削除"
+  },
+  "deleted": {
+    "message": "この録画は削除されました"
+  },
+  "openLibrary": {
+    "message": "ライブラリを開く"
+  },
+  "errMissingId": {
+    "message": "録画 ID が見つかりません"
+  },
+  "errNotFound": {
+    "message": "録画が見つかりません — 削除された可能性があります"
+  },
+  "loading": {
+    "message": "読み込み中…"
+  },
+  "hintVideo": {
+    "message": "動画はライブラリに保存されました — いつでももう一度ダウンロードできます"
+  },
+  "hintShot": {
+    "message": "スクリーンショットはライブラリに保存されました — いつでももう一度ダウンロードできます"
+  },
+  "libTitle": {
+    "message": "ライブラリ"
+  },
+  "usageUsed": {
+    "message": "使用量"
+  },
+  "usageQuota": {
+    "message": "/"
+  },
+  "libEmpty": {
+    "message": "まだ何もありません — 何か録画してみましょう！"
+  },
+  "preview": {
+    "message": "プレビュー"
+  },
+  "collapse": {
+    "message": "隠す"
+  },
+  "close": {
+    "message": "閉じる"
+  },
+  "anRect": {
+    "message": "四角形"
+  },
+  "anArrow": {
+    "message": "矢印"
+  },
+  "anPen": {
+    "message": "ペン"
+  },
+  "anText": {
+    "message": "テキスト"
+  },
+  "anMosaic": {
+    "message": "モザイク"
+  },
+  "anUndo": {
+    "message": "元に戻す"
+  },
+  "anClear": {
+    "message": "すべて消去"
+  },
+  "anMissingId": {
+    "message": "画像 ID が見つかりません"
+  },
+  "anNotFound": {
+    "message": "画像が見つかりません — 削除された可能性があります"
+  },
+  "anDownloadPng": {
+    "message": "PNG をダウンロード"
+  },
+  "anDeleteOrig": {
+    "message": "元画像を削除"
+  },
+  "anSave": {
+    "message": "ライブラリに保存"
+  },
+  "anSaving": {
+    "message": "保存中…"
+  },
+  "anSaved": {
+    "message": "保存しました"
+  },
+  "anTextPh": {
+    "message": "テキストを入力、Ctrl+Enter で確定"
+  },
+  "anPngFailed": {
+    "message": "PNG のエンコードに失敗しました"
+  },
+  "ocrTitle": {
+    "message": "文字認識"
+  },
+  "ocrInit": {
+    "message": "OCR エンジンを初期化中…"
+  },
+  "ocrLoad": {
+    "message": "OCR エンジンを読み込み中…"
+  },
+  "ocrRecognizing": {
+    "message": "テキストを認識中…"
+  },
+  "ocrMissingId": {
+    "message": "画像 ID が見つかりません"
+  },
+  "ocrNotFound": {
+    "message": "画像が見つかりません — 削除された可能性があります"
+  },
+  "ocrChars": {
+    "message": "文字"
+  },
+  "ocrSaveTxt": {
+    "message": ".txt を保存"
+  },
+  "ocrCopy": {
+    "message": "テキストをコピー"
+  },
+  "ocrEmpty": {
+    "message": "テキストが検出されませんでした"
+  },
+  "errBusy": {
+    "message": "すでに録画が進行中です"
+  },
+  "errNoTargetTab": {
+    "message": "対象のタブが見つかりません"
+  },
+  "errStart": {
+    "message": "録画の開始に失敗しました"
+  },
+  "errFullpageUnsupported": {
+    "message": "このページではページ全体のキャプチャに対応していません — 「画面 / ウィンドウ」を試してください"
+  },
+  "errPageHeight": {
+    "message": "ページの高さを取得できませんでした"
+  },
+  "errDownloadInterrupted": {
+    "message": "ダウンロードが中断またはキャンセルされました"
+  },
+  "errShotScriptMissing": {
+    "message": "page-shot スクリプトが見つかりません"
+  },
+  "recRecording": {
+    "message": "録画中…"
+  },
+  "recPaused": {
+    "message": "一時停止中"
+  },
+  "recSaving": {
+    "message": "保存中…"
+  },
+  "recDiscard": {
+    "message": "破棄"
+  },
+  "recSure": {
+    "message": "本当によろしいですか？"
+  },
+  "recPause": {
+    "message": "一時停止"
+  },
+  "recResume": {
+    "message": "再開"
+  },
+  "recStop": {
+    "message": "停止"
+  },
+  "recEmbedCam": {
+    "message": "カメラを合成"
+  },
+  "recHideCam": {
+    "message": "カメラを隠す"
+  },
+  "cbStopLabel": {
+    "message": "停止"
+  },
+  "rwTitle": {
+    "message": "reclink · 録画"
+  },
+  "diagCountdown": {
+    "message": "カウントダウン診断"
+  },
+  "notifCountdown": {
+    "message": "$1 秒後に録画を開始します",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "cbMicOn": {
+    "message": "マイクのミュートを解除"
+  },
+  "cbMicOff": {
+    "message": "マイクをミュート"
+  },
+  "cbToolPen": {
+    "message": "ペン"
+  },
+  "cbToolRect": {
+    "message": "四角形"
+  },
+  "cbToolArrow": {
+    "message": "矢印"
+  },
+  "cbClear": {
+    "message": "注釈を消去"
+  },
+  "cbCollapse": {
+    "message": "ツールバーを折りたたむ"
+  },
+  "cbExpand": {
+    "message": "ツールバーを展開"
+  },
+  "cbAnnoPanel": {
+    "message": "注釈"
+  },
+  "cbCursorFx": {
+    "message": "カーソルエフェクト"
+  },
+  "cbFxNormal": {
+    "message": "通常カーソル"
+  },
+  "cbFxSpotlight": {
+    "message": "スポットライト"
+  },
+  "cbFxRing": {
+    "message": "ハイライトリング"
+  },
+  "cbFxPatch": {
+    "message": "プライバシーパッチ"
+  },
+  "cbToolEraser": {
+    "message": "消しゴム"
+  },
+  "ratePrompt": {
+    "message": "気に入りましたら、レビューをお願いします"
+  }
+}

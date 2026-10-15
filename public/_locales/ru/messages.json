@@ -1,0 +1,514 @@
+{
+  "extName": {
+    "message": "Reclink — Запись экрана и скриншоты"
+  },
+  "extDesc": {
+    "message": "Запись экрана для Chrome: вкладка, экран и камера со звуком. Полный скриншот страницы, аннотации, OCR. Всё локально и приватно."
+  },
+  "cmdOpen": {
+    "message": "Открыть reclink"
+  },
+  "cmdCapture": {
+    "message": "Снять скриншот видимой области текущей вкладки"
+  },
+  "tabShot": {
+    "message": "Скриншот"
+  },
+  "tabRecord": {
+    "message": "Запись"
+  },
+  "modeScreen": {
+    "message": "Рабочий стол"
+  },
+  "modeCamera": {
+    "message": "Камера"
+  },
+  "modeTab": {
+    "message": "Эта вкладка"
+  },
+  "modeRegion": {
+    "message": "Область"
+  },
+  "micOn": {
+    "message": "Микрофон включён"
+  },
+  "micOff": {
+    "message": "Микрофон отключён"
+  },
+  "camOn": {
+    "message": "Пузырь камеры включён"
+  },
+  "camOff": {
+    "message": "Пузырь камеры отключён"
+  },
+  "controlBar": {
+    "message": "Панель управления"
+  },
+  "resolution": {
+    "message": "Разрешение видео"
+  },
+  "exportFormat": {
+    "message": "Формат экспорта"
+  },
+  "more": {
+    "message": "Ещё"
+  },
+  "starting": {
+    "message": "Запуск…"
+  },
+  "startRecording": {
+    "message": "Начать запись"
+  },
+  "shotVisible": {
+    "message": "Видимая область"
+  },
+  "shotFullpage": {
+    "message": "Вся страница"
+  },
+  "shotRegion": {
+    "message": "Выбрать область"
+  },
+  "shotDelayed": {
+    "message": "Снимок с задержкой"
+  },
+  "shotScreen": {
+    "message": "Экран / Окно"
+  },
+  "shotAnnotate": {
+    "message": "Аннотировать изображение"
+  },
+  "shotOcr": {
+    "message": "Извлечь текст (OCR)"
+  },
+  "storageTo": {
+    "message": "Сохранять скриншоты в"
+  },
+  "storageLocal": {
+    "message": "Локально"
+  },
+  "back": {
+    "message": "Назад"
+  },
+  "countdownTitle": {
+    "message": "Обратный отсчёт"
+  },
+  "countdownSub": {
+    "message": "Отсчёт 3 с после нажатия «Старт»"
+  },
+  "resLabel": {
+    "message": "Разрешение"
+  },
+  "fmtLabel": {
+    "message": "Формат"
+  },
+  "fmtSub": {
+    "message": "MP4 требует Chrome 126+; иначе используется WebM"
+  },
+  "libraryLink": {
+    "message": "Библиотека"
+  },
+  "settingsTitle": {
+    "message": "Дополнительные настройки"
+  },
+  "errShotFailed": {
+    "message": "Не удалось сделать снимок"
+  },
+  "errNoTab": {
+    "message": "Активная вкладка не найдена"
+  },
+  "errStartFailed": {
+    "message": "Не удалось запустить"
+  },
+  "errSaveFailed": {
+    "message": "Не удалось сохранить"
+  },
+  "unknownError": {
+    "message": "Неизвестная ошибка"
+  },
+  "msgSavedTo": {
+    "message": "Сохранено в"
+  },
+  "downloadDir": {
+    "message": "Загрузки"
+  },
+  "msgRecordDone": {
+    "message": "Запись завершена — открыт предпросмотр"
+  },
+  "needPermission": {
+    "message": "Для этого сайта необходимо разрешение на запись"
+  },
+  "authorizeStart": {
+    "message": "Разрешить и начать"
+  },
+  "cbPause": {
+    "message": "Пауза"
+  },
+  "cbResume": {
+    "message": "Продолжить"
+  },
+  "cbStop": {
+    "message": "Стоп"
+  },
+  "cbSaving": {
+    "message": "Сохранение…"
+  },
+  "cbCamOn": {
+    "message": "Добавить пузырь камеры"
+  },
+  "cbCamOff": {
+    "message": "Убрать пузырь камеры"
+  },
+  "countdownLabel": {
+    "message": "Запись начнётся через"
+  },
+  "countdownCancel": {
+    "message": "Отмена"
+  },
+  "pickerTip": {
+    "message": "Выделите область для $VERB$, Esc — отмена",
+    "placeholders": {
+      "VERB": {
+        "content": "$1"
+      }
+    }
+  },
+  "pickerVerb_record": {
+    "message": "записи"
+  },
+  "pickerVerb_shot": {
+    "message": "снимка"
+  },
+  "pickerVerb_ocr": {
+    "message": "распознавания"
+  },
+  "pickerConfirm_record": {
+    "message": "Начать"
+  },
+  "pickerConfirm_shot": {
+    "message": "Снять"
+  },
+  "pickerConfirm_ocr": {
+    "message": "Распознать"
+  },
+  "pickerReset": {
+    "message": "Заново"
+  },
+  "pickerCancel": {
+    "message": "Отмена"
+  },
+  "rwPreparing": {
+    "message": "Подготовка…"
+  },
+  "rwCamRequesting": {
+    "message": "Запрос разрешения на камеру — разрешите его в диалоге…"
+  },
+  "rwNoCamera": {
+    "message": "Камера не обнаружена"
+  },
+  "rwNoCameraHint": {
+    "message": "Убедитесь, что камера подключена и доступна."
+  },
+  "rwCamDenied": {
+    "message": "Камера недоступна"
+  },
+  "rwCamDeniedHint": {
+    "message": "Chrome не получил разрешение на использование камеры."
+  },
+  "rwCamGuide1": {
+    "message": "· Нажмите значок слева от адресной строки и установите для камеры значение «Разрешить»"
+  },
+  "rwCamGuide2": {
+    "message": "· macOS: Системные настройки → Конфиденциальность и безопасность → Камера, отметьте Chrome и перезапустите браузер"
+  },
+  "doneRecord": {
+    "message": "Запись завершена"
+  },
+  "doneShot": {
+    "message": "Снимок сделан"
+  },
+  "labelTab": {
+    "message": "Вкладка"
+  },
+  "labelScreen": {
+    "message": "Экран"
+  },
+  "labelCamera": {
+    "message": "Камера"
+  },
+  "labelScreenshot": {
+    "message": "Скриншот"
+  },
+  "durSec": {
+    "message": "$1 с",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "durMinSec": {
+    "message": "$1 мин $2 с",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      },
+      "2": {
+        "content": "$2"
+      }
+    }
+  },
+  "download": {
+    "message": "Скачать"
+  },
+  "downloadAgain": {
+    "message": "Скачать снова"
+  },
+  "copy": {
+    "message": "Копировать"
+  },
+  "copied": {
+    "message": "Скопировано ✓"
+  },
+  "annotate": {
+    "message": "Аннотировать"
+  },
+  "remove": {
+    "message": "Удалить"
+  },
+  "deleted": {
+    "message": "Эта запись удалена"
+  },
+  "openLibrary": {
+    "message": "Открыть библиотеку"
+  },
+  "errMissingId": {
+    "message": "Не указан идентификатор записи"
+  },
+  "errNotFound": {
+    "message": "Запись не найдена — возможно, она была удалена"
+  },
+  "loading": {
+    "message": "Загрузка…"
+  },
+  "hintVideo": {
+    "message": "Видео сохранено в библиотеку — можно скачать снова в любой момент"
+  },
+  "hintShot": {
+    "message": "Скриншот сохранён в библиотеку — можно скачать снова в любой момент"
+  },
+  "libTitle": {
+    "message": "Библиотека"
+  },
+  "usageUsed": {
+    "message": "Занято"
+  },
+  "usageQuota": {
+    "message": "из"
+  },
+  "libEmpty": {
+    "message": "Здесь пока пусто — запишите что-нибудь!"
+  },
+  "preview": {
+    "message": "Предпросмотр"
+  },
+  "collapse": {
+    "message": "Скрыть"
+  },
+  "close": {
+    "message": "Закрыть"
+  },
+  "anRect": {
+    "message": "Прямоугольник"
+  },
+  "anArrow": {
+    "message": "Стрелка"
+  },
+  "anPen": {
+    "message": "Перо"
+  },
+  "anText": {
+    "message": "Текст"
+  },
+  "anMosaic": {
+    "message": "Мозаика"
+  },
+  "anUndo": {
+    "message": "Отменить"
+  },
+  "anClear": {
+    "message": "Очистить"
+  },
+  "anMissingId": {
+    "message": "Не указан идентификатор изображения"
+  },
+  "anNotFound": {
+    "message": "Изображение не найдено — возможно, оно было удалено"
+  },
+  "anDownloadPng": {
+    "message": "Скачать PNG"
+  },
+  "anDeleteOrig": {
+    "message": "Удалить оригинал"
+  },
+  "anSave": {
+    "message": "Сохранить в библиотеку"
+  },
+  "anSaving": {
+    "message": "Сохранение…"
+  },
+  "anSaved": {
+    "message": "Сохранено"
+  },
+  "anTextPh": {
+    "message": "Введите текст, Ctrl+Enter — подтвердить"
+  },
+  "anPngFailed": {
+    "message": "Не удалось закодировать PNG"
+  },
+  "ocrTitle": {
+    "message": "Распознавание текста"
+  },
+  "ocrInit": {
+    "message": "Инициализация движка OCR…"
+  },
+  "ocrLoad": {
+    "message": "Загрузка движка OCR…"
+  },
+  "ocrRecognizing": {
+    "message": "Распознавание текста…"
+  },
+  "ocrMissingId": {
+    "message": "Не указан идентификатор изображения"
+  },
+  "ocrNotFound": {
+    "message": "Изображение не найдено — возможно, оно было удалено"
+  },
+  "ocrChars": {
+    "message": "симв."
+  },
+  "ocrSaveTxt": {
+    "message": "Сохранить .txt"
+  },
+  "ocrCopy": {
+    "message": "Копировать текст"
+  },
+  "ocrEmpty": {
+    "message": "Текст не обнаружен"
+  },
+  "errBusy": {
+    "message": "Запись уже идёт"
+  },
+  "errNoTargetTab": {
+    "message": "Не найдена целевая вкладка"
+  },
+  "errStart": {
+    "message": "Не удалось начать запись"
+  },
+  "errFullpageUnsupported": {
+    "message": "Съёмка всей страницы не поддерживается на этой странице — попробуйте «Экран / Окно»"
+  },
+  "errPageHeight": {
+    "message": "Не удалось определить высоту страницы"
+  },
+  "errDownloadInterrupted": {
+    "message": "Загрузка была прервана или отменена"
+  },
+  "errShotScriptMissing": {
+    "message": "отсутствует скрипт page-shot"
+  },
+  "recRecording": {
+    "message": "Идёт запись…"
+  },
+  "recPaused": {
+    "message": "Пауза"
+  },
+  "recSaving": {
+    "message": "Сохранение…"
+  },
+  "recDiscard": {
+    "message": "Отменить"
+  },
+  "recSure": {
+    "message": "Точно?"
+  },
+  "recPause": {
+    "message": "Пауза"
+  },
+  "recResume": {
+    "message": "Продолжить"
+  },
+  "recStop": {
+    "message": "Стоп"
+  },
+  "recEmbedCam": {
+    "message": "Встроить камеру"
+  },
+  "recHideCam": {
+    "message": "Скрыть камеру"
+  },
+  "cbStopLabel": {
+    "message": "СТОП"
+  },
+  "rwTitle": {
+    "message": "reclink · Запись"
+  },
+  "diagCountdown": {
+    "message": "Диагностика обратного отсчёта"
+  },
+  "notifCountdown": {
+    "message": "Запись начнётся через $1 с",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "cbMicOn": {
+    "message": "Включить микрофон"
+  },
+  "cbMicOff": {
+    "message": "Выключить микрофон"
+  },
+  "cbToolPen": {
+    "message": "Перо"
+  },
+  "cbToolRect": {
+    "message": "Прямоугольник"
+  },
+  "cbToolArrow": {
+    "message": "Стрелка"
+  },
+  "cbClear": {
+    "message": "Очистить аннотации"
+  },
+  "cbCollapse": {
+    "message": "Свернуть панель"
+  },
+  "cbExpand": {
+    "message": "Развернуть панель"
+  },
+  "cbAnnoPanel": {
+    "message": "Аннотировать"
+  },
+  "cbCursorFx": {
+    "message": "Эффекты курсора"
+  },
+  "cbFxNormal": {
+    "message": "Обычный курсор"
+  },
+  "cbFxSpotlight": {
+    "message": "Прожектор"
+  },
+  "cbFxRing": {
+    "message": "Подсветка кольцом"
+  },
+  "cbFxPatch": {
+    "message": "Приватное пятно"
+  },
+  "cbToolEraser": {
+    "message": "Ластик"
+  },
+  "ratePrompt": {
+    "message": "Понравился reclink? Оставьте отзыв"
+  }
+}

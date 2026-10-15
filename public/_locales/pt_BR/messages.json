@@ -1,0 +1,514 @@
+{
+  "extName": {
+    "message": "Reclink — Gravador de tela e capturas"
+  },
+  "extDesc": {
+    "message": "Gravador de tela para Chrome: grave aba, tela e câmera com áudio. Captura de página inteira, anotações e OCR. 100% local e privado."
+  },
+  "cmdOpen": {
+    "message": "Abrir o reclink"
+  },
+  "cmdCapture": {
+    "message": "Capturar a área visível da aba atual"
+  },
+  "tabShot": {
+    "message": "Capturar"
+  },
+  "tabRecord": {
+    "message": "Gravar"
+  },
+  "modeScreen": {
+    "message": "Área de trabalho"
+  },
+  "modeCamera": {
+    "message": "Câmera"
+  },
+  "modeTab": {
+    "message": "Esta aba"
+  },
+  "modeRegion": {
+    "message": "Região"
+  },
+  "micOn": {
+    "message": "Microfone ativado"
+  },
+  "micOff": {
+    "message": "Microfone silenciado"
+  },
+  "camOn": {
+    "message": "Bolha de câmera ativada"
+  },
+  "camOff": {
+    "message": "Bolha de câmera desativada"
+  },
+  "controlBar": {
+    "message": "Barra de controle"
+  },
+  "resolution": {
+    "message": "Resolução do vídeo"
+  },
+  "exportFormat": {
+    "message": "Formato de exportação"
+  },
+  "more": {
+    "message": "Mais"
+  },
+  "starting": {
+    "message": "Iniciando…"
+  },
+  "startRecording": {
+    "message": "Iniciar gravação"
+  },
+  "shotVisible": {
+    "message": "Visível"
+  },
+  "shotFullpage": {
+    "message": "Página inteira"
+  },
+  "shotRegion": {
+    "message": "Selecionar área"
+  },
+  "shotDelayed": {
+    "message": "Captura com atraso"
+  },
+  "shotScreen": {
+    "message": "Tela / Janela"
+  },
+  "shotAnnotate": {
+    "message": "Anotar imagem"
+  },
+  "shotOcr": {
+    "message": "Extrair texto (OCR)"
+  },
+  "storageTo": {
+    "message": "Salvar capturas de tela em"
+  },
+  "storageLocal": {
+    "message": "Local"
+  },
+  "back": {
+    "message": "Voltar"
+  },
+  "countdownTitle": {
+    "message": "Contagem regressiva"
+  },
+  "countdownSub": {
+    "message": "Contar 3 s após clicar em iniciar"
+  },
+  "resLabel": {
+    "message": "Resolução"
+  },
+  "fmtLabel": {
+    "message": "Formato"
+  },
+  "fmtSub": {
+    "message": "MP4 requer Chrome 126+; caso contrário, usa WebM"
+  },
+  "libraryLink": {
+    "message": "Biblioteca"
+  },
+  "settingsTitle": {
+    "message": "Mais configurações"
+  },
+  "errShotFailed": {
+    "message": "Falha na captura"
+  },
+  "errNoTab": {
+    "message": "Nenhuma aba ativa encontrada"
+  },
+  "errStartFailed": {
+    "message": "Falha ao iniciar"
+  },
+  "errSaveFailed": {
+    "message": "Falha ao salvar"
+  },
+  "unknownError": {
+    "message": "Erro desconhecido"
+  },
+  "msgSavedTo": {
+    "message": "Salvo em"
+  },
+  "downloadDir": {
+    "message": "Downloads"
+  },
+  "msgRecordDone": {
+    "message": "Gravação concluída — pré-visualização aberta"
+  },
+  "needPermission": {
+    "message": "É necessário permissão de gravação para este site"
+  },
+  "authorizeStart": {
+    "message": "Conceder e iniciar"
+  },
+  "cbPause": {
+    "message": "Pausar"
+  },
+  "cbResume": {
+    "message": "Retomar"
+  },
+  "cbStop": {
+    "message": "Parar"
+  },
+  "cbSaving": {
+    "message": "Salvando…"
+  },
+  "cbCamOn": {
+    "message": "Adicionar bolha de câmera"
+  },
+  "cbCamOff": {
+    "message": "Remover bolha de câmera"
+  },
+  "countdownLabel": {
+    "message": "A gravação começará em"
+  },
+  "countdownCancel": {
+    "message": "Cancelar"
+  },
+  "pickerTip": {
+    "message": "Arraste para selecionar a área para $VERB$, Esc para cancelar",
+    "placeholders": {
+      "VERB": {
+        "content": "$1"
+      }
+    }
+  },
+  "pickerVerb_record": {
+    "message": "gravar"
+  },
+  "pickerVerb_shot": {
+    "message": "capturar"
+  },
+  "pickerVerb_ocr": {
+    "message": "reconhecer"
+  },
+  "pickerConfirm_record": {
+    "message": "Iniciar"
+  },
+  "pickerConfirm_shot": {
+    "message": "Capturar"
+  },
+  "pickerConfirm_ocr": {
+    "message": "Reconhecer"
+  },
+  "pickerReset": {
+    "message": "Refazer"
+  },
+  "pickerCancel": {
+    "message": "Cancelar"
+  },
+  "rwPreparing": {
+    "message": "Preparando…"
+  },
+  "rwCamRequesting": {
+    "message": "Solicitando permissão de câmera — permita no aviso exibido…"
+  },
+  "rwNoCamera": {
+    "message": "Nenhuma câmera detectada"
+  },
+  "rwNoCameraHint": {
+    "message": "Verifique se uma câmera está conectada e disponível."
+  },
+  "rwCamDenied": {
+    "message": "Câmera indisponível"
+  },
+  "rwCamDeniedHint": {
+    "message": "O Chrome não recebeu permissão de câmera."
+  },
+  "rwCamGuide1": {
+    "message": "· Clique no ícone à esquerda da barra de endereço e defina Câmera como “Permitir”"
+  },
+  "rwCamGuide2": {
+    "message": "· macOS: Ajustes do Sistema → Privacidade e Segurança → Câmera, marque o Chrome e reinicie o navegador"
+  },
+  "doneRecord": {
+    "message": "Gravação concluída"
+  },
+  "doneShot": {
+    "message": "Captura concluída"
+  },
+  "labelTab": {
+    "message": "Aba"
+  },
+  "labelScreen": {
+    "message": "Tela"
+  },
+  "labelCamera": {
+    "message": "Câmera"
+  },
+  "labelScreenshot": {
+    "message": "Captura de tela"
+  },
+  "durSec": {
+    "message": "$1 s",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "durMinSec": {
+    "message": "$1 min $2 s",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      },
+      "2": {
+        "content": "$2"
+      }
+    }
+  },
+  "download": {
+    "message": "Baixar"
+  },
+  "downloadAgain": {
+    "message": "Baixar novamente"
+  },
+  "copy": {
+    "message": "Copiar"
+  },
+  "copied": {
+    "message": "Copiado ✓"
+  },
+  "annotate": {
+    "message": "Anotar"
+  },
+  "remove": {
+    "message": "Excluir"
+  },
+  "deleted": {
+    "message": "Esta gravação foi excluída"
+  },
+  "openLibrary": {
+    "message": "Abrir biblioteca"
+  },
+  "errMissingId": {
+    "message": "ID da gravação ausente"
+  },
+  "errNotFound": {
+    "message": "Gravação não encontrada — ela pode ter sido excluída"
+  },
+  "loading": {
+    "message": "Carregando…"
+  },
+  "hintVideo": {
+    "message": "O vídeo foi salvo na sua biblioteca — baixe novamente quando quiser"
+  },
+  "hintShot": {
+    "message": "A captura de tela foi salva na sua biblioteca — baixe novamente quando quiser"
+  },
+  "libTitle": {
+    "message": "Biblioteca"
+  },
+  "usageUsed": {
+    "message": "Usado"
+  },
+  "usageQuota": {
+    "message": "de"
+  },
+  "libEmpty": {
+    "message": "Nada por aqui ainda — vá gravar algo!"
+  },
+  "preview": {
+    "message": "Pré-visualizar"
+  },
+  "collapse": {
+    "message": "Ocultar"
+  },
+  "close": {
+    "message": "Fechar"
+  },
+  "anRect": {
+    "message": "Retângulo"
+  },
+  "anArrow": {
+    "message": "Seta"
+  },
+  "anPen": {
+    "message": "Caneta"
+  },
+  "anText": {
+    "message": "Texto"
+  },
+  "anMosaic": {
+    "message": "Mosaico"
+  },
+  "anUndo": {
+    "message": "Desfazer"
+  },
+  "anClear": {
+    "message": "Limpar"
+  },
+  "anMissingId": {
+    "message": "ID da imagem ausente"
+  },
+  "anNotFound": {
+    "message": "Imagem não encontrada — ela pode ter sido excluída"
+  },
+  "anDownloadPng": {
+    "message": "Baixar PNG"
+  },
+  "anDeleteOrig": {
+    "message": "Excluir original"
+  },
+  "anSave": {
+    "message": "Salvar na biblioteca"
+  },
+  "anSaving": {
+    "message": "Salvando…"
+  },
+  "anSaved": {
+    "message": "Salvo"
+  },
+  "anTextPh": {
+    "message": "Digite o texto, Ctrl+Enter para confirmar"
+  },
+  "anPngFailed": {
+    "message": "Falha ao codificar PNG"
+  },
+  "ocrTitle": {
+    "message": "Reconhecimento de texto"
+  },
+  "ocrInit": {
+    "message": "Inicializando motor de OCR…"
+  },
+  "ocrLoad": {
+    "message": "Carregando motor de OCR…"
+  },
+  "ocrRecognizing": {
+    "message": "Reconhecendo texto…"
+  },
+  "ocrMissingId": {
+    "message": "ID da imagem ausente"
+  },
+  "ocrNotFound": {
+    "message": "Imagem não encontrada — ela pode ter sido excluída"
+  },
+  "ocrChars": {
+    "message": "caracteres"
+  },
+  "ocrSaveTxt": {
+    "message": "Salvar .txt"
+  },
+  "ocrCopy": {
+    "message": "Copiar texto"
+  },
+  "ocrEmpty": {
+    "message": "Nenhum texto detectado"
+  },
+  "errBusy": {
+    "message": "Já existe uma gravação em andamento"
+  },
+  "errNoTargetTab": {
+    "message": "Aba de destino ausente"
+  },
+  "errStart": {
+    "message": "Falha ao iniciar a gravação"
+  },
+  "errFullpageUnsupported": {
+    "message": "A captura de página inteira não é suportada nesta página — tente “Tela / Janela”"
+  },
+  "errPageHeight": {
+    "message": "Não foi possível ler a altura da página"
+  },
+  "errDownloadInterrupted": {
+    "message": "O download foi interrompido ou cancelado"
+  },
+  "errShotScriptMissing": {
+    "message": "script de captura de página ausente"
+  },
+  "recRecording": {
+    "message": "Gravando…"
+  },
+  "recPaused": {
+    "message": "Pausado"
+  },
+  "recSaving": {
+    "message": "Salvando…"
+  },
+  "recDiscard": {
+    "message": "Descartar"
+  },
+  "recSure": {
+    "message": "Tem certeza?"
+  },
+  "recPause": {
+    "message": "Pausar"
+  },
+  "recResume": {
+    "message": "Retomar"
+  },
+  "recStop": {
+    "message": "Parar"
+  },
+  "recEmbedCam": {
+    "message": "Incorporar câmera"
+  },
+  "recHideCam": {
+    "message": "Ocultar câmera"
+  },
+  "cbStopLabel": {
+    "message": "PARAR"
+  },
+  "rwTitle": {
+    "message": "reclink · Gravar"
+  },
+  "diagCountdown": {
+    "message": "Diagnóstico de contagem regressiva"
+  },
+  "notifCountdown": {
+    "message": "A gravação começa em $1 s",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "cbMicOn": {
+    "message": "Ativar microfone"
+  },
+  "cbMicOff": {
+    "message": "Silenciar microfone"
+  },
+  "cbToolPen": {
+    "message": "Caneta"
+  },
+  "cbToolRect": {
+    "message": "Retângulo"
+  },
+  "cbToolArrow": {
+    "message": "Seta"
+  },
+  "cbClear": {
+    "message": "Limpar anotações"
+  },
+  "cbCollapse": {
+    "message": "Recolher barra de ferramentas"
+  },
+  "cbExpand": {
+    "message": "Expandir barra de ferramentas"
+  },
+  "cbAnnoPanel": {
+    "message": "Anotar"
+  },
+  "cbCursorFx": {
+    "message": "Efeitos do cursor"
+  },
+  "cbFxNormal": {
+    "message": "Cursor normal"
+  },
+  "cbFxSpotlight": {
+    "message": "Destaque (spotlight)"
+  },
+  "cbFxRing": {
+    "message": "Anel de destaque"
+  },
+  "cbFxPatch": {
+    "message": "Bloqueio de privacidade"
+  },
+  "cbToolEraser": {
+    "message": "Borracha"
+  },
+  "ratePrompt": {
+    "message": "Gostou do reclink? Deixe uma avaliação"
+  }
+}

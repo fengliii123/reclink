@@ -1,0 +1,514 @@
+{
+  "extName": {
+    "message": "Reclink 录屏截图"
+  },
+  "extDesc": {
+    "message": "Chrome 录屏扩展：录制标签页、屏幕、摄像头（含声音），整页截图、标注、OCR 识别，全部本地处理不上传。"
+  },
+  "cmdOpen": {
+    "message": "打开 reclink"
+  },
+  "cmdCapture": {
+    "message": "截取当前标签页可视区域"
+  },
+  "tabShot": {
+    "message": "截图"
+  },
+  "tabRecord": {
+    "message": "录屏"
+  },
+  "modeScreen": {
+    "message": "桌面"
+  },
+  "modeCamera": {
+    "message": "摄像头"
+  },
+  "modeTab": {
+    "message": "当前标签页"
+  },
+  "modeRegion": {
+    "message": "区域录制"
+  },
+  "micOn": {
+    "message": "麦克风已开启"
+  },
+  "micOff": {
+    "message": "麦克风已静音"
+  },
+  "camOn": {
+    "message": "人像已开启"
+  },
+  "camOff": {
+    "message": "人像已关闭"
+  },
+  "controlBar": {
+    "message": "控制栏"
+  },
+  "resolution": {
+    "message": "视频分辨率"
+  },
+  "exportFormat": {
+    "message": "导出格式"
+  },
+  "more": {
+    "message": "更多"
+  },
+  "starting": {
+    "message": "启动中…"
+  },
+  "startRecording": {
+    "message": "开始录制"
+  },
+  "shotVisible": {
+    "message": "可视区域"
+  },
+  "shotFullpage": {
+    "message": "整个页面"
+  },
+  "shotRegion": {
+    "message": "选择区域"
+  },
+  "shotDelayed": {
+    "message": "延迟截取可视区域"
+  },
+  "shotScreen": {
+    "message": "整个屏幕或应用窗口"
+  },
+  "shotAnnotate": {
+    "message": "标注本地或剪贴板图片"
+  },
+  "shotOcr": {
+    "message": "截图提取文本"
+  },
+  "storageTo": {
+    "message": "把截屏存储到"
+  },
+  "storageLocal": {
+    "message": "本地"
+  },
+  "back": {
+    "message": "返回"
+  },
+  "countdownTitle": {
+    "message": "开始倒计时"
+  },
+  "countdownSub": {
+    "message": "点击开始后倒数 3 秒再录制"
+  },
+  "resLabel": {
+    "message": "分辨率"
+  },
+  "fmtLabel": {
+    "message": "格式"
+  },
+  "fmtSub": {
+    "message": "MP4 需要 Chrome 126+，不支持时自动回退 WebM"
+  },
+  "libraryLink": {
+    "message": "录制库"
+  },
+  "settingsTitle": {
+    "message": "更多设置"
+  },
+  "errShotFailed": {
+    "message": "截图失败"
+  },
+  "errNoTab": {
+    "message": "找不到当前标签页"
+  },
+  "errStartFailed": {
+    "message": "启动失败"
+  },
+  "errSaveFailed": {
+    "message": "保存失败"
+  },
+  "unknownError": {
+    "message": "未知错误"
+  },
+  "msgSavedTo": {
+    "message": "已保存："
+  },
+  "downloadDir": {
+    "message": "下载目录"
+  },
+  "msgRecordDone": {
+    "message": "录制完成，已打开预览窗口"
+  },
+  "needPermission": {
+    "message": "需要该站点的录制权限"
+  },
+  "authorizeStart": {
+    "message": "授权并开始"
+  },
+  "cbPause": {
+    "message": "暂停"
+  },
+  "cbResume": {
+    "message": "继续"
+  },
+  "cbStop": {
+    "message": "结束"
+  },
+  "cbSaving": {
+    "message": "正在保存…"
+  },
+  "cbCamOn": {
+    "message": "加入人像"
+  },
+  "cbCamOff": {
+    "message": "关闭人像"
+  },
+  "countdownLabel": {
+    "message": "录制即将开始"
+  },
+  "countdownCancel": {
+    "message": "取消"
+  },
+  "pickerTip": {
+    "message": "按住拖拽选择要$VERB$的区域，Esc 取消",
+    "placeholders": {
+      "VERB": {
+        "content": "$1"
+      }
+    }
+  },
+  "pickerVerb_record": {
+    "message": "录制"
+  },
+  "pickerVerb_shot": {
+    "message": "截取"
+  },
+  "pickerVerb_ocr": {
+    "message": "识别"
+  },
+  "pickerConfirm_record": {
+    "message": "开始录制"
+  },
+  "pickerConfirm_shot": {
+    "message": "截图"
+  },
+  "pickerConfirm_ocr": {
+    "message": "识别"
+  },
+  "pickerReset": {
+    "message": "重选"
+  },
+  "pickerCancel": {
+    "message": "取消"
+  },
+  "rwPreparing": {
+    "message": "准备中..."
+  },
+  "rwCamRequesting": {
+    "message": "正在请求摄像头权限，请在弹窗中允许..."
+  },
+  "rwNoCamera": {
+    "message": "未检测到摄像头"
+  },
+  "rwNoCameraHint": {
+    "message": "请确认摄像头已连接并可用。"
+  },
+  "rwCamDenied": {
+    "message": "无法访问摄像头"
+  },
+  "rwCamDeniedHint": {
+    "message": "Chrome 未获得摄像头权限。"
+  },
+  "rwCamGuide1": {
+    "message": "· 点击地址栏左侧的图标，将摄像头设为「允许」"
+  },
+  "rwCamGuide2": {
+    "message": "· macOS：系统设置 → 隐私与安全性 → 摄像头，勾选 Chrome 后重启浏览器"
+  },
+  "doneRecord": {
+    "message": "录制完成"
+  },
+  "doneShot": {
+    "message": "截图完成"
+  },
+  "labelTab": {
+    "message": "标签页"
+  },
+  "labelScreen": {
+    "message": "屏幕"
+  },
+  "labelCamera": {
+    "message": "摄像头"
+  },
+  "labelScreenshot": {
+    "message": "截图"
+  },
+  "durSec": {
+    "message": "$1 秒",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "durMinSec": {
+    "message": "$1 分 $2 秒",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      },
+      "2": {
+        "content": "$2"
+      }
+    }
+  },
+  "download": {
+    "message": "下载"
+  },
+  "downloadAgain": {
+    "message": "再次下载"
+  },
+  "copy": {
+    "message": "复制"
+  },
+  "copied": {
+    "message": "已复制 ✓"
+  },
+  "annotate": {
+    "message": "标注"
+  },
+  "remove": {
+    "message": "删除"
+  },
+  "deleted": {
+    "message": "该录制已删除"
+  },
+  "openLibrary": {
+    "message": "打开录制库"
+  },
+  "errMissingId": {
+    "message": "缺少录制 id"
+  },
+  "errNotFound": {
+    "message": "录制记录不存在，可能已被删除"
+  },
+  "loading": {
+    "message": "加载中…"
+  },
+  "hintVideo": {
+    "message": "视频已自动存入录制库，可随时回来再次下载"
+  },
+  "hintShot": {
+    "message": "截图已自动存入录制库，可随时回来再次下载"
+  },
+  "libTitle": {
+    "message": "录制库"
+  },
+  "usageUsed": {
+    "message": "已用"
+  },
+  "usageQuota": {
+    "message": "配额约"
+  },
+  "libEmpty": {
+    "message": "还没有录制记录，去录一个吧"
+  },
+  "preview": {
+    "message": "预览"
+  },
+  "collapse": {
+    "message": "收起"
+  },
+  "close": {
+    "message": "关闭"
+  },
+  "anRect": {
+    "message": "矩形"
+  },
+  "anArrow": {
+    "message": "箭头"
+  },
+  "anPen": {
+    "message": "画笔"
+  },
+  "anText": {
+    "message": "文字"
+  },
+  "anMosaic": {
+    "message": "马赛克"
+  },
+  "anUndo": {
+    "message": "撤销"
+  },
+  "anClear": {
+    "message": "清空"
+  },
+  "anMissingId": {
+    "message": "缺少图片 id"
+  },
+  "anNotFound": {
+    "message": "图片不存在，可能已被删除"
+  },
+  "anDownloadPng": {
+    "message": "下载 PNG"
+  },
+  "anDeleteOrig": {
+    "message": "删除原图"
+  },
+  "anSave": {
+    "message": "保存到录制库"
+  },
+  "anSaving": {
+    "message": "保存中…"
+  },
+  "anSaved": {
+    "message": "已保存"
+  },
+  "anTextPh": {
+    "message": "输入文字，Ctrl+Enter 确定"
+  },
+  "anPngFailed": {
+    "message": "PNG 编码失败"
+  },
+  "ocrTitle": {
+    "message": "文本识别"
+  },
+  "ocrInit": {
+    "message": "正在初始化识别引擎…"
+  },
+  "ocrLoad": {
+    "message": "正在加载识别引擎…"
+  },
+  "ocrRecognizing": {
+    "message": "正在识别文字…"
+  },
+  "ocrMissingId": {
+    "message": "缺少图片 id"
+  },
+  "ocrNotFound": {
+    "message": "图片不存在，可能已被删除"
+  },
+  "ocrChars": {
+    "message": "字符"
+  },
+  "ocrSaveTxt": {
+    "message": "保存 .txt"
+  },
+  "ocrCopy": {
+    "message": "复制文本"
+  },
+  "ocrEmpty": {
+    "message": "未识别到文字"
+  },
+  "errBusy": {
+    "message": "已有录制进行中"
+  },
+  "errNoTargetTab": {
+    "message": "缺少目标标签页"
+  },
+  "errStart": {
+    "message": "录制启动失败"
+  },
+  "errFullpageUnsupported": {
+    "message": "此页面不支持整页截图，可用「整个屏幕」替代"
+  },
+  "errPageHeight": {
+    "message": "无法读取页面高度"
+  },
+  "errDownloadInterrupted": {
+    "message": "下载被中断或取消"
+  },
+  "errShotScriptMissing": {
+    "message": "page-shot 脚本缺失"
+  },
+  "recRecording": {
+    "message": "录制中…"
+  },
+  "recPaused": {
+    "message": "已暂停"
+  },
+  "recSaving": {
+    "message": "保存中…"
+  },
+  "recDiscard": {
+    "message": "丢弃"
+  },
+  "recSure": {
+    "message": "确认?"
+  },
+  "recPause": {
+    "message": "暂停"
+  },
+  "recResume": {
+    "message": "继续"
+  },
+  "recStop": {
+    "message": "停止"
+  },
+  "recEmbedCam": {
+    "message": "加入人像"
+  },
+  "recHideCam": {
+    "message": "关闭人像"
+  },
+  "cbStopLabel": {
+    "message": "停止"
+  },
+  "rwTitle": {
+    "message": "reclink · 录制"
+  },
+  "diagCountdown": {
+    "message": "倒计时诊断"
+  },
+  "notifCountdown": {
+    "message": "$1 秒后开始录制",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "cbMicOn": {
+    "message": "开启麦克风"
+  },
+  "cbMicOff": {
+    "message": "静音麦克风"
+  },
+  "cbToolPen": {
+    "message": "画笔"
+  },
+  "cbToolRect": {
+    "message": "矩形"
+  },
+  "cbToolArrow": {
+    "message": "箭头"
+  },
+  "cbClear": {
+    "message": "清除批注"
+  },
+  "cbCollapse": {
+    "message": "收起工具栏"
+  },
+  "cbExpand": {
+    "message": "展开工具栏"
+  },
+  "cbAnnoPanel": {
+    "message": "批注"
+  },
+  "cbCursorFx": {
+    "message": "光标效果"
+  },
+  "cbFxNormal": {
+    "message": "普通光标"
+  },
+  "cbFxSpotlight": {
+    "message": "聚光灯"
+  },
+  "cbFxRing": {
+    "message": "圆环跟随"
+  },
+  "cbFxPatch": {
+    "message": "遮挡"
+  },
+  "cbToolEraser": {
+    "message": "橡皮"
+  },
+  "ratePrompt": {
+    "message": "觉得好用？欢迎留下评价"
+  }
+}

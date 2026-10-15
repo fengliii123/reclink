@@ -1,0 +1,514 @@
+{
+  "extName": {
+    "message": "Reclink — Screen Recorder & Screenshot"
+  },
+  "extDesc": {
+    "message": "Screen recorder for Chrome: record tab, screen & camera with audio. Full-page screenshot, annotate, OCR. 100% local, private."
+  },
+  "cmdOpen": {
+    "message": "Open reclink"
+  },
+  "cmdCapture": {
+    "message": "Capture visible area of the current tab"
+  },
+  "tabShot": {
+    "message": "Capture"
+  },
+  "tabRecord": {
+    "message": "Record"
+  },
+  "modeScreen": {
+    "message": "Desktop"
+  },
+  "modeCamera": {
+    "message": "Camera"
+  },
+  "modeTab": {
+    "message": "This Tab"
+  },
+  "modeRegion": {
+    "message": "Region"
+  },
+  "micOn": {
+    "message": "Microphone on"
+  },
+  "micOff": {
+    "message": "Microphone muted"
+  },
+  "camOn": {
+    "message": "Camera bubble on"
+  },
+  "camOff": {
+    "message": "Camera bubble off"
+  },
+  "controlBar": {
+    "message": "Control bar"
+  },
+  "resolution": {
+    "message": "Video resolution"
+  },
+  "exportFormat": {
+    "message": "Export format"
+  },
+  "more": {
+    "message": "More"
+  },
+  "starting": {
+    "message": "Starting…"
+  },
+  "startRecording": {
+    "message": "Start Recording"
+  },
+  "shotVisible": {
+    "message": "Visible"
+  },
+  "shotFullpage": {
+    "message": "Full Page"
+  },
+  "shotRegion": {
+    "message": "Select Area"
+  },
+  "shotDelayed": {
+    "message": "Delayed Capture"
+  },
+  "shotScreen": {
+    "message": "Screen / Window"
+  },
+  "shotAnnotate": {
+    "message": "Annotate Image"
+  },
+  "shotOcr": {
+    "message": "Extract Text (OCR)"
+  },
+  "storageTo": {
+    "message": "Save screenshots to"
+  },
+  "storageLocal": {
+    "message": "Local"
+  },
+  "back": {
+    "message": "Back"
+  },
+  "countdownTitle": {
+    "message": "Countdown"
+  },
+  "countdownSub": {
+    "message": "Count down 3s after clicking start"
+  },
+  "resLabel": {
+    "message": "Resolution"
+  },
+  "fmtLabel": {
+    "message": "Format"
+  },
+  "fmtSub": {
+    "message": "MP4 requires Chrome 126+; falls back to WebM"
+  },
+  "libraryLink": {
+    "message": "Library"
+  },
+  "settingsTitle": {
+    "message": "More settings"
+  },
+  "errShotFailed": {
+    "message": "Capture failed"
+  },
+  "errNoTab": {
+    "message": "No active tab found"
+  },
+  "errStartFailed": {
+    "message": "Failed to start"
+  },
+  "errSaveFailed": {
+    "message": "Save failed"
+  },
+  "unknownError": {
+    "message": "Unknown error"
+  },
+  "msgSavedTo": {
+    "message": "Saved to"
+  },
+  "downloadDir": {
+    "message": "Downloads"
+  },
+  "msgRecordDone": {
+    "message": "Recording finished — preview opened"
+  },
+  "needPermission": {
+    "message": "Recording permission is needed for this site"
+  },
+  "authorizeStart": {
+    "message": "Grant & Start"
+  },
+  "cbPause": {
+    "message": "Pause"
+  },
+  "cbResume": {
+    "message": "Resume"
+  },
+  "cbStop": {
+    "message": "Stop"
+  },
+  "cbSaving": {
+    "message": "Saving…"
+  },
+  "cbCamOn": {
+    "message": "Add camera bubble"
+  },
+  "cbCamOff": {
+    "message": "Remove camera bubble"
+  },
+  "countdownLabel": {
+    "message": "Recording will start in"
+  },
+  "countdownCancel": {
+    "message": "Cancel"
+  },
+  "pickerTip": {
+    "message": "Drag to select the area to $VERB$, Esc to cancel",
+    "placeholders": {
+      "VERB": {
+        "content": "$1"
+      }
+    }
+  },
+  "pickerVerb_record": {
+    "message": "record"
+  },
+  "pickerVerb_shot": {
+    "message": "capture"
+  },
+  "pickerVerb_ocr": {
+    "message": "recognize"
+  },
+  "pickerConfirm_record": {
+    "message": "Start"
+  },
+  "pickerConfirm_shot": {
+    "message": "Capture"
+  },
+  "pickerConfirm_ocr": {
+    "message": "Recognize"
+  },
+  "pickerReset": {
+    "message": "Redo"
+  },
+  "pickerCancel": {
+    "message": "Cancel"
+  },
+  "rwPreparing": {
+    "message": "Preparing…"
+  },
+  "rwCamRequesting": {
+    "message": "Requesting camera permission — allow it in the prompt…"
+  },
+  "rwNoCamera": {
+    "message": "No camera detected"
+  },
+  "rwNoCameraHint": {
+    "message": "Make sure a camera is connected and available."
+  },
+  "rwCamDenied": {
+    "message": "Camera unavailable"
+  },
+  "rwCamDeniedHint": {
+    "message": "Chrome has not been granted camera permission."
+  },
+  "rwCamGuide1": {
+    "message": "· Click the icon on the left of the address bar and set Camera to “Allow”"
+  },
+  "rwCamGuide2": {
+    "message": "· macOS: System Settings → Privacy & Security → Camera, check Chrome and restart the browser"
+  },
+  "doneRecord": {
+    "message": "Recording complete"
+  },
+  "doneShot": {
+    "message": "Capture complete"
+  },
+  "labelTab": {
+    "message": "Tab"
+  },
+  "labelScreen": {
+    "message": "Screen"
+  },
+  "labelCamera": {
+    "message": "Camera"
+  },
+  "labelScreenshot": {
+    "message": "Screenshot"
+  },
+  "durSec": {
+    "message": "$1 s",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "durMinSec": {
+    "message": "$1 min $2 s",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      },
+      "2": {
+        "content": "$2"
+      }
+    }
+  },
+  "download": {
+    "message": "Download"
+  },
+  "downloadAgain": {
+    "message": "Download again"
+  },
+  "copy": {
+    "message": "Copy"
+  },
+  "copied": {
+    "message": "Copied ✓"
+  },
+  "annotate": {
+    "message": "Annotate"
+  },
+  "remove": {
+    "message": "Delete"
+  },
+  "deleted": {
+    "message": "This recording has been deleted"
+  },
+  "openLibrary": {
+    "message": "Open Library"
+  },
+  "errMissingId": {
+    "message": "Missing recording id"
+  },
+  "errNotFound": {
+    "message": "Recording not found — it may have been deleted"
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "hintVideo": {
+    "message": "The video has been saved to your library — download again anytime"
+  },
+  "hintShot": {
+    "message": "The screenshot has been saved to your library — download again anytime"
+  },
+  "libTitle": {
+    "message": "Library"
+  },
+  "usageUsed": {
+    "message": "Used"
+  },
+  "usageQuota": {
+    "message": "of"
+  },
+  "libEmpty": {
+    "message": "Nothing here yet — go record something!"
+  },
+  "preview": {
+    "message": "Preview"
+  },
+  "collapse": {
+    "message": "Hide"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "anRect": {
+    "message": "Rectangle"
+  },
+  "anArrow": {
+    "message": "Arrow"
+  },
+  "anPen": {
+    "message": "Pen"
+  },
+  "anText": {
+    "message": "Text"
+  },
+  "anMosaic": {
+    "message": "Mosaic"
+  },
+  "anUndo": {
+    "message": "Undo"
+  },
+  "anClear": {
+    "message": "Clear"
+  },
+  "anMissingId": {
+    "message": "Missing image id"
+  },
+  "anNotFound": {
+    "message": "Image not found — it may have been deleted"
+  },
+  "anDownloadPng": {
+    "message": "Download PNG"
+  },
+  "anDeleteOrig": {
+    "message": "Delete Original"
+  },
+  "anSave": {
+    "message": "Save to Library"
+  },
+  "anSaving": {
+    "message": "Saving…"
+  },
+  "anSaved": {
+    "message": "Saved"
+  },
+  "anTextPh": {
+    "message": "Type text, Ctrl+Enter to confirm"
+  },
+  "anPngFailed": {
+    "message": "PNG encoding failed"
+  },
+  "ocrTitle": {
+    "message": "Text Recognition"
+  },
+  "ocrInit": {
+    "message": "Initializing OCR engine…"
+  },
+  "ocrLoad": {
+    "message": "Loading OCR engine…"
+  },
+  "ocrRecognizing": {
+    "message": "Recognizing text…"
+  },
+  "ocrMissingId": {
+    "message": "Missing image id"
+  },
+  "ocrNotFound": {
+    "message": "Image not found — it may have been deleted"
+  },
+  "ocrChars": {
+    "message": "chars"
+  },
+  "ocrSaveTxt": {
+    "message": "Save .txt"
+  },
+  "ocrCopy": {
+    "message": "Copy Text"
+  },
+  "ocrEmpty": {
+    "message": "No text detected"
+  },
+  "errBusy": {
+    "message": "A recording is already in progress"
+  },
+  "errNoTargetTab": {
+    "message": "Missing target tab"
+  },
+  "errStart": {
+    "message": "Failed to start recording"
+  },
+  "errFullpageUnsupported": {
+    "message": "Full-page capture is not supported on this page — try “Screen / Window” instead"
+  },
+  "errPageHeight": {
+    "message": "Could not read page height"
+  },
+  "errDownloadInterrupted": {
+    "message": "Download was interrupted or cancelled"
+  },
+  "errShotScriptMissing": {
+    "message": "page-shot script missing"
+  },
+  "recRecording": {
+    "message": "Recording…"
+  },
+  "recPaused": {
+    "message": "Paused"
+  },
+  "recSaving": {
+    "message": "Saving…"
+  },
+  "recDiscard": {
+    "message": "Discard"
+  },
+  "recSure": {
+    "message": "Sure?"
+  },
+  "recPause": {
+    "message": "Pause"
+  },
+  "recResume": {
+    "message": "Resume"
+  },
+  "recStop": {
+    "message": "Stop"
+  },
+  "recEmbedCam": {
+    "message": "Embed Camera"
+  },
+  "recHideCam": {
+    "message": "Hide Camera"
+  },
+  "cbStopLabel": {
+    "message": "STOP"
+  },
+  "rwTitle": {
+    "message": "reclink · Record"
+  },
+  "diagCountdown": {
+    "message": "Countdown diagnostics"
+  },
+  "notifCountdown": {
+    "message": "Recording starts in $1 s",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "cbMicOn": {
+    "message": "Unmute microphone"
+  },
+  "cbMicOff": {
+    "message": "Mute microphone"
+  },
+  "cbToolPen": {
+    "message": "Pen"
+  },
+  "cbToolRect": {
+    "message": "Rectangle"
+  },
+  "cbToolArrow": {
+    "message": "Arrow"
+  },
+  "cbClear": {
+    "message": "Clear annotations"
+  },
+  "cbCollapse": {
+    "message": "Collapse toolbar"
+  },
+  "cbExpand": {
+    "message": "Expand toolbar"
+  },
+  "cbAnnoPanel": {
+    "message": "Annotate"
+  },
+  "cbCursorFx": {
+    "message": "Cursor effects"
+  },
+  "cbFxNormal": {
+    "message": "Normal cursor"
+  },
+  "cbFxSpotlight": {
+    "message": "Spotlight"
+  },
+  "cbFxRing": {
+    "message": "Highlight ring"
+  },
+  "cbFxPatch": {
+    "message": "Privacy patch"
+  },
+  "cbToolEraser": {
+    "message": "Eraser"
+  },
+  "ratePrompt": {
+    "message": "Enjoying reclink? Leave a review"
+  }
+}

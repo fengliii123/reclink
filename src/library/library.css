@@ -1,0 +1,193 @@
+/* Vidline 风格：浅蓝底 + 白卡片 + 品牌蓝 #0669FF */
+:root {
+  --blue: #0669ff;
+  --blue-dark: #0659ff;
+  --blue-bg: #e0eefe;
+  --text: #16233a;
+  --text-2: #5b6b83;
+  --red: #ff4757;
+  --border: #e4ebf5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: linear-gradient(180deg, #f2f7ff 0%, #f7faff 240px, #f7faff 100%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 36px 20px 60px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: auto;
+}
+
+.logo-mark {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4f8dff 0%, #7458f7 100%);
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.22);
+}
+
+.logo-mark::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 9px auto;
+  border-radius: 50%;
+  background: #fff;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.usage {
+  font-size: 12.5px;
+  color: var(--blue-dark);
+  background: var(--blue-bg);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.empty {
+  color: #9db0c9;
+  text-align: center;
+  padding: 80px 0;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 18px;
+  border: 1px dashed var(--border);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 10px rgba(22, 55, 102, 0.05);
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(6, 105, 255, 0.1);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--blue-bg);
+  color: var(--blue);
+}
+
+.badge.screen {
+  background: #e3f8f0;
+  color: #00a676;
+}
+
+.badge.camera {
+  background: #fff1e8;
+  color: #f0762b;
+}
+
+.badge.screenshot {
+  background: #f3eefd;
+  color: #7b4fe0;
+}
+
+.time {
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.detail {
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.actions button {
+  border: 1.5px solid var(--border);
+  background: #fff;
+  border-radius: 12px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text);
+  transition: all 0.12s;
+}
+
+.actions button:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+  background: #f5f9ff;
+}
+
+.actions button.danger {
+  border-color: #ffd3d8;
+  color: var(--red);
+}
+
+.actions button.danger:hover {
+  background: #fff5f6;
+  border-color: var(--red);
+}
+
+.preview {
+  width: 100%;
+  margin-top: 14px;
+  border-radius: 12px;
+  background: #000;
+}
+
+img.preview.shot {
+  height: auto;
+  background: #f1f3f4;
+}
