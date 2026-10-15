@@ -241,7 +241,16 @@ export function handleScreenPick(msg: Extract<ToBackgroundMessage, { type: 'STAR
     void (async () => {
       try {
         await ensureOffscreen()
-        await chrome.runtime.sendMessage({ type: 'OFFSCREEN_SHOT' })
+        const resp = await chrome.runtime.sendMessage({ type: 'OFFSCREEN_SHOT' }) as { ok?: boolean; error?: string } | undefined
+        // popup 点击后即关，失败只能经系统通知告知（如用户取消选源 / 编码失败）
+        if (resp && resp.ok === false) {
+          void chrome.notifications.create({
+            type: 'basic',
+            iconUrl: chrome.runtime.getURL('icons/128.png'),
+            title: 'reclink',
+            message: resp.error || t('errShotFailed'),
+          })
+        }
       } catch (e) {
         console.warn('[reclink] screen shot failed:', e)
       } finally {
@@ -265,7 +274,7 @@ export function handleScreenPick(msg: Extract<ToBackgroundMessage, { type: 'STAR
 
 export function startRecording(msg: StartRecordingMsg): Promise<{ ok: boolean; error?: string }> {
   // 串行化并发启动（如重复点击/popup 重开），避免两个 START 同时通过 idle 检查
-  if (startInFlight) return Promise.resolve({ ok: false, error: '录制正在启动' })
+  if (startInFlight) return Promise.resolve({ ok: false, error: t('errStarting') })
   startInFlight = doStartRecording(msg).finally(() => {
     startInFlight = null
   })
@@ -513,6 +522,8 @@ export async function confirmRecordingStarted(
 ): Promise<{ ok: boolean }> {
   const current = await getState()
   if (current.status !== 'idle') return { ok: true }
+  // 倒计时重发器可能还剩最后一两次 tick，会覆盖录制计时徽章（甚至清空），先停掉
+  stopCountdownResend()
   await setState({
     status: 'recording',
     mode: msg.mode,
@@ -558,7 +569,15 @@ export async function stopRecording(): Promise<void> {
   const s = await getState()
   if (s.status !== 'recording' && s.status !== 'paused') return
   await setState({ ...s, status: 'saving' })
-  await chrome.runtime.sendMessage({ type: 'OFFSCREEN_CONTROL', action: 'stop' }).catch(() => {})
+  try {
+    await chrome.runtime.sendMessage({ type: 'OFFSCREEN_CONTROL', action: 'stop' })
+  } catch {
+    // offscreen 已不在（被杀/异常关闭）：OFFSCREEN_STOPPED 永远不会来，直接复位，
+    // 否则状态卡死在 saving、徽章停在 '···'，无法再次开录。录像随 offscreen 丢失。
+    chrome.runtime.sendMessage({ type: 'SAVE_COMPLETE', ok: false, error: t('errRecorderLost') }).catch(() => {})
+    await closeOffscreen().catch(() => {})
+    await setState(IDLE_STATE, s.targetTabId != null ? [s.targetTabId] : [])
+  }
   // 后续由 OFFSCREEN_STOPPED 消息驱动（handleOffscreenStopped）
 }
 
@@ -567,7 +586,12 @@ export async function discardRecording(): Promise<void> {
   const s = await getState()
   if (s.status !== 'recording' && s.status !== 'paused') return
   await setState({ ...s, status: 'saving' })
-  await chrome.runtime.sendMessage({ type: 'OFFSCREEN_CONTROL', action: 'delete' }).catch(() => {})
+  try {
+    await chrome.runtime.sendMessage({ type: 'OFFSCREEN_CONTROL', action: 'delete' })
+  } catch {
+    await handleOffscreenDiscarded()
+    return
+  }
   // 后续由 OFFSCREEN_DISCARDED 消息驱动（handleOffscreenDiscarded）
 }
 

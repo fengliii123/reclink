@@ -510,5 +510,20 @@
   },
   "ratePrompt": {
     "message": "Enjoying reclink? Leave a review"
+  },
+  "errStarting": {
+    "message": "Recording is starting"
+  },
+  "errInProgress": {
+    "message": "A recording is already in progress"
+  },
+  "errRecorderLost": {
+    "message": "Recorder lost, this recording could not be saved"
+  },
+  "doneError": {
+    "message": "Error"
+  },
+  "errHintNotFound": {
+    "message": "The recording does not exist or the link is invalid. You can find it again in the library."
   }
 }

@@ -510,5 +510,20 @@
   },
   "ratePrompt": {
     "message": "觉得好用？欢迎留下评价"
+  },
+  "errStarting": {
+    "message": "录制正在启动，请稍候"
+  },
+  "errInProgress": {
+    "message": "录制已在进行中"
+  },
+  "errRecorderLost": {
+    "message": "录制进程已丢失，本次录像未能保存"
+  },
+  "doneError": {
+    "message": "出错了"
+  },
+  "errHintNotFound": {
+    "message": "录制内容不存在或链接无效，可从录制库中重新找到它。"
   }
 }

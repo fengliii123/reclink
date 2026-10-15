@@ -2,6 +2,7 @@ import { RECORDER_TIMESLICE_MS } from '../shared/constants'
 import { saveRecording } from '../media/store'
 import { RECORD_CANCELLED, type OffscreenStartMsg, type RecordingFormat } from '../shared/messages'
 import type { RecordingMode } from '../shared/types'
+import { t } from '../shared/i18n'
 import { buildStream, type AssembledStream } from './streams'
 
 let recorder: MediaRecorder | null = null
@@ -56,7 +57,7 @@ function releaseAssembled(): void {
 }
 
 export async function startRecorder(msg: OffscreenStartMsg): Promise<void> {
-  if (recorder) throw new Error('录制已在进行中')
+  if (recorder) throw new Error(t('errInProgress'))
   assembled = await buildStream(msg)
   mode = msg.mode
   // 取流成功后先在目标页控制条上倒计时，再正式开录（对齐 Awesome Screenshot 交互）
@@ -159,7 +160,9 @@ async function finish(): Promise<void> {
   }
   const mimeType = recorder?.mimeType || 'video/webm'
   const sizeBytes = chunks.reduce((sum, c) => sum + c.size, 0)
-  const durationMs = Date.now() - startedAt - pausedMs
+  // 停止时可能仍处于暂停中（未 resume），需把进行中的暂停折算进去，否则时长虚高
+  const totalPausedMs = pausedMs + (pauseStartedAt != null ? Date.now() - pauseStartedAt : 0)
+  const durationMs = Date.now() - startedAt - totalPausedMs
   const blob = new Blob(chunks, { type: mimeType })
   const startedAtCopy = startedAt
   const modeCopy = mode

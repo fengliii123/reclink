@@ -109,14 +109,18 @@ function mount(): void {
 
   confirmBtn.addEventListener('click', () => {
     if (!selection) return
-    // 截图用途必须先卸载遮罩再上报，否则遮罩会被 captureVisibleTab 拍进去
+    // 截图用途必须先卸载遮罩再上报，否则遮罩会被 captureVisibleTab 拍进去。
+    // DOM 移除 ≠ 已重绘：需等两帧合成完毕，否则 SW 抓到的仍是带遮罩的旧帧
     remove()
-    void chrome.runtime.sendMessage({
-      type: 'REGION_SELECTED',
-      crop: selection,
-      viewportWidth: window.innerWidth,
-      purpose,
-    })
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        void chrome.runtime.sendMessage({
+          type: 'REGION_SELECTED',
+          crop: selection,
+          viewportWidth: window.innerWidth,
+          purpose,
+        })
+      }))
   })
   shadow.querySelector('.reset')!.addEventListener('click', () => {
     selection = null
