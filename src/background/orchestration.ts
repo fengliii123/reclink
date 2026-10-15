@@ -116,14 +116,14 @@ function countdownOverlayMain(): void {
   root.id = 'reclink-countdown'
   const style = document.createElement('style')
   style.textContent = `
-.countdown-overlay { position: fixed; inset: 0; z-index: 2147483647; background: rgba(0,0,0,.45);
+.countdown-overlay { position: fixed; inset: 0; z-index: 2147483647; background: rgba(0,0,0,.62);
   display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff;
   font-family: -apple-system,'PingFang SC','Microsoft YaHei',sans-serif; user-select: none; }
-.countdown-text { font-size: 28px; font-weight: 500; letter-spacing: .4px; text-shadow: 0 2px 8px rgba(0,0,0,.6); }
-.countdown-num { font-family: Arial,sans-serif; font-size: 112px; line-height: 1.15;
-  font-variant-numeric: tabular-nums; text-shadow: 0 4px 18px rgba(0,0,0,.65); }
-.countdown-cancel { margin-top: 36px; padding: 8px 38px; border: 1px solid rgba(255,255,255,.45);
-  border-radius: 6px; font-size: 15px; color: rgba(255,255,255,.9); cursor: pointer; }
+.countdown-text { font-size: 28px; font-weight: 600; letter-spacing: .4px; text-shadow: 0 2px 10px rgba(0,0,0,.85); }
+.countdown-num { font-family: Arial,sans-serif; font-size: 112px; line-height: 1.15; font-weight: 700;
+  font-variant-numeric: tabular-nums; text-shadow: 0 4px 22px rgba(0,0,0,.9); }
+.countdown-cancel { margin-top: 36px; padding: 8px 38px; border: 1px solid rgba(255,255,255,.6);
+  border-radius: 6px; font-size: 15px; color: #fff; cursor: pointer; }
 .countdown-cancel:hover { background: rgba(255,255,255,.12); }
 .countdown-overlay[hidden] { display: none !important; }`
   const overlay = document.createElement('div')
